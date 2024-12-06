@@ -1,0 +1,22 @@
+.glass-morphism {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.btn1 {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    background: linear-gradient(45deg, #FFA500, #FF4500);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn1:hover {
+    background: linear-gradient(45deg, #FF4500, #FFA500);
+}

@@ -1,0 +1,53 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="navbar" [ngClass]="{'open': isMenuOpen}">
+    
+                    <ul>
+                        <li class="list toggler" (click)="toggleNavbar()">
+                            <span class="icon">
+    
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-1z" />
+                                </svg>
+                            </span>
+                        </li>
+    
+                        <li class="list t" [ngClass]="{'active': activeIndex === 0}" (click)="setActiveIndex(0)">
+                            <a class="icon-link" (click)="navigateTo('Order')">
+                                <span class="icon" data-tooltip="Order">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                                      </svg>
+                                </span>
+                                <span class="title">Orders</span>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8" >
+                <ng-container *ngIf="activeComponent; else showImage">
+                    <ng-container *ngComponentOutlet="activeComponent"></ng-container>
+                </ng-container>
+    
+                <ng-template #showImage>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="text-white pt-5 fs-1" style="padding: 0vh; margin-top: 12vh;">Welcome</p>
+                            </div>
+                            <div class="col-md-9">
+                                <img src="../../../assets/img/14.png" alt="" class="img-fluid" style="width: 210vh;height: 100vh; margin-left: 1vh;">
+                            </div>
+                        </div>
+                    </div>                    
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</section>

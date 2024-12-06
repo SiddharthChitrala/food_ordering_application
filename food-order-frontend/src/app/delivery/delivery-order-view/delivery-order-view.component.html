@@ -1,0 +1,27 @@
+<section>
+    <div class="container-fluid">
+        <div *ngFor="let data of locationData" class="glass-card">
+            <div class="glass-content">
+                <p class="text-white">{{ data.name }}</p>
+                <p class="text-white">{{ data.address }}</p>
+                <p class="text-white">{{ data.phone }}</p>
+                <button (click)="deleteDelivery(data._id)" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mt-4">
+                        <div class="card-body" style="position: relative;">
+                            <div #map id="map" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

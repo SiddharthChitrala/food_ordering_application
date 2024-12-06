@@ -1,0 +1,16 @@
+<section id="section1">
+    <div class="container-fluid pt-5 mt-4">
+        <p class="text-white fs-1 text-center">User's Order</p>
+        <div class="row">
+            <div class="col-md-4 mb-4 " *ngFor="let address of tracking">
+                <div class="card-body glassmorphism-card p-3">
+                    <p class="card-title text-white fs-5 fw-bold">Name: {{ address.name }}</p>
+                    <p class="card-text text-white">Phone :{{ address.phone }}</p>
+                    <p class="card-text text-white">Address:{{ address.address }}</p>
+                    <p class="card-text text-white">Money: ₹ {{address.totalMoney}}</p>
+                    <p class="card-text text-white">Order Details :{{address.orderDetails}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

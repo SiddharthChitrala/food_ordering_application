@@ -1,0 +1,30 @@
+#section1 .container-fluid{
+    margin-top: -10vh;
+    background-color: black;
+    min-height: 110vh;
+    height: 250%;
+}
+
+.glassmorphism-card {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+.glassmorphism-card:hover {
+    transform: scale(1.05);
+}
+
+.cart-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 20px;
+}

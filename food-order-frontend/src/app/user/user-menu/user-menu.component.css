@@ -1,0 +1,76 @@
+
+.btn1 {
+    height: 8vh;
+    width: 25vh;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    background: linear-gradient(45deg, #FFA500, #FF4500);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn1:hover {
+    background: linear-gradient(45deg, #FF4500, #FFA500);
+}
+
+.glassmorphism-card {
+    background: rgba(255, 255, 255, 0.2);
+    /* Background with 20% opacity for the glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    /* Border with opacity for a frosted look */
+    backdrop-filter: blur(5px);
+    /* Apply a 5px blur for the glass effect */
+    border-radius: 10px;
+    /* Rounded corners for the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Slight shadow for depth */
+    transition: all 0.3s ease;
+    /* Smooth transition on hover */
+
+    /* Center content vertically and horizontally within the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.glassmorphism-card:hover {
+    transform: scale(1.05);
+    /* Scale up the card on hover for an interactive effect */
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: 35vh;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.cart-btn {
+    cursor: pointer;
+    width: 50px;
+    /* Adjust the size as needed */
+    height: 50px;
+    /* Adjust the size as needed */
+    background: linear-gradient(45deg, #FFA500, #FF4500);
+    /* Background color for the button */
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.cart-btn:hover {
+    background: linear-gradient(45deg, #FFA500, #FF4500);
+}
